@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Grimstone : Porks</name>
+	<author>Abrolo, ViralReaction</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+    </supportedVersions>
+	<packageId>Grimstone.Porks</packageId>
+	<loadAfter>
+		<li>DankPyon.Medieval.Overhaul</li>
+	</loadAfter>
+	<description>This mod adds a new xenotype : Porks. The Porkfolk are a hybrid of orcs and pigs. These creatures are characterized by their hefty build and sluggishness, yet they compensate for their lack of mobility with remarkable resilience and enhanced regeneration. Having once led austere lifestyles, they demonstrate a remarkable adaptability to various situations, which is why they constituted a significant portion of the Dark Lord's armies during raids on villages.</description>
+</ModMetaData>
