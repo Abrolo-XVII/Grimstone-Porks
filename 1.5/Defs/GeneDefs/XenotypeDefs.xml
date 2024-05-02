@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Grimstone.Porks</defName>
+		<label>pork</label>
+		<description></description>
+		<descriptionShort></descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Porks</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonPork</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>Hands_Pig</li>
+			<li>Nearsighted</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Pain_Reduced</li>
+			<li>Immunity_Strong</li>
+			<li>PsychicAbility_Dull</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Aggression_Aggressive</li>
+			<li>Sleepy</li>
+			<li>VoicePig</li>
+			<li>Grimstone.PorkBody</li> <!-- else <li>Body_Fat</li> + purple color-->
+			<li>Grimstone.PorkHead</li>
+			<li>Grimstone.PorkSnout</li>
+			<li>Grimstone.PorkEars</li>
+			<li>Grimstone.Carrier</li>
+			<li>AptitudeStrong_Crafting</li>
+		</genes>
+	</XenotypeDef>
+</Defs>
