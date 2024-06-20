@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--COSMETICS-->
+
+  <!--Head-->
+
+	<GeneDef ParentName="GeneJawBase">
+		<defName>GS_PorkHead</defName>
+		<label>pork head</label>
+		<description>Carriers of this gene have a pork head.</description>
+		<iconPath>UI/Gene_PorkHead</iconPath>
+		<forcedHeadTypes>
+			<li>GS_PorkHeadShape</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>97</displayOrderInCategory>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork</symbol></li>
+        <li><symbol>skull</symbol></li>
+        <li><symbol>dead</symbol></li>
+        <li><symbol>bone</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+	</GeneDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>GS_PorkHeadShape</defName>
+		<graphicPath>Things/Pawn/Head/PorkHead</graphicPath>
+		<randomChosen>false</randomChosen>
+		<requiredGenes>
+			<li>GS_PorkHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+  
+
+
+  <!--Ears-->
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>GS_PorkEars</defName>
+    <label>pork ears</label>
+    <description>Carriers of this gene grow pork ears.</description>
+    <iconPath>UI/Gene_PorkEars</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Things/Pawn/Ears/PorkEars1</li>
+          <li>Things/Pawn/Ears/PorkEars2</li>
+		  <li>Things/Pawn/Ears/PorkEars2b</li>
+          <li>Things/Pawn/Ears/PorkEars3</li>
+		  <li>Things/Pawn/Ears/PorkEars3b</li>
+		  <li>Things/Pawn/Ears/PorkEars4</li>
+		  <li>Things/Pawn/Ears/PorkEars4b</li>
+		  <li>Things/Pawn/Ears/PorkEars5</li>
+		  <li>Things/Pawn/Ears/PorkEars5b</li>
+		  <li>Things/Pawn/Ears/PorkEars6</li>
+		  <li>Things/Pawn/Ears/PorkEars7</li>
+		  <li>Things/Pawn/Ears/PorkEars7b</li>
+		  <li>Things/Pawn/Ears/PorkEars8</li>
+		  <li>Things/Pawn/Ears/PorkEars8b</li>
+		  <li>Things/Pawn/Ears/PorkEars9</li>
+		  <li>Things/Pawn/Ears/PorkEars9b</li>
+		  <li>Things/Pawn/Ears/PorkEars10</li>
+		  <li>Things/Pawn/Ears/PorkEars10b</li>
+		  <li>Things/Pawn/Ears/PorkEars11</li>
+		  <li>Things/Pawn/Ears/PorkEars11b</li>
+        </texPaths>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>70</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>pork</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>pork</symbol></li>
+        <li><symbol>ear</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+ 
+  <!--Snout-->
+    <GeneDef ParentName="GeneNoseBase">
+    <defName>GS_PorkSnout</defName>
+    <label>pork snout</label>
+    <description>Carriers of this gene have pork-like snouts.</description>
+    <iconPath>UI/Gene_PorkSnout</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Snout/PorkSnout</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.1</missingGeneRomanceChanceFactor>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>pork</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>swine</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <!--Ears-->
+	<GeneDef>
+		<defName>GS_PorkTusks</defName>
+		<label>pork tusks</label>
+	
+		<description>Carriers of this gene grow tusks.</description>
+		<iconPath>UI/Icons/Genes/Gene_MouthTusks</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		
+		<exclusionTags>
+			<li>Tusk</li>
+			<li>Tusks</li>
+		</exclusionTags>
+		
+		<randomChosen>true</randomChosen>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPaths>
+          <li>Things/Pawn/Tusk/PorkTusk1</li>
+		  <li>Things/Pawn/Tusk/PorkTusk2</li>
+		  <li>Things/Pawn/Tusk/PorkTusk2b</li>
+		  <li>Things/Pawn/Tusk/PorkTusk3</li>
+		  <li>Things/Pawn/Tusk/PorkTusk3b</li>
+		  <li>Things/Pawn/Tusk/PorkTusk4</li>
+		  <li>Things/Pawn/Tusk/PorkTusk4b</li>
+		  <li>Things/Pawn/Tusk/PorkTusk5</li>
+        </texPaths>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <!--<drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+		   <dataEast>
+            <offset>(0, 0.19, 0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0, 0.19, 0)</offset>
+          </dataWest>
+        </drawData>-->
+      </li>
+    </renderNodeProperties>
+		
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+				<li>
+					<symbol>tusken</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+
+	<!--Eyes-->
+	<GeneDef>
+		<defName>GS_PorkEyes</defName>
+		<label>pork eyes</label>
+		<labelShortAdj>pork-eyed</labelShortAdj>
+		<description>Carriers of this gene have pork eyes.</description>
+		<iconPath>UI/PorkEye</iconPath>
+		<prerequisite>GS_PorkHead</prerequisite>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>9003</displayOrderInCategory>
+		<ignoreDarkness>false</ignoreDarkness>
+		<biostatCpx>0</biostatCpx>
+		<graphicData>
+			<!--<drawScale>0.28</drawScale>-->
+			<graphicPath>Things/Pawn/Eyes/PorkEyes</graphicPath>
+			<visibleNorth>false</visibleNorth>
+			<layer>PostTattoo</layer>
+		</graphicData>
+		  <exclusionTags>
+      <li>EyeColor</li>
+    </exclusionTags>
+	</GeneDef>
+	
+</Defs>

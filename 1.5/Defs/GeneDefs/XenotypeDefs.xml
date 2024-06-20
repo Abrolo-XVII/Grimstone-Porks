@@ -21,11 +21,13 @@
 			<li>Aggression_Aggressive</li>
 			<li>Sleepy</li>
 			<li>VoicePig</li>
-			<li>Grimstone.PorkBody</li> <!-- else <li>Body_Fat</li> + purple color-->
-			<li>Grimstone.PorkHead</li>
-			<li>Grimstone.PorkSnout</li>
-			<li>Grimstone.PorkEars</li>
-			<li>Grimstone.Carrier</li>
+			<!--<li>GS_PorkBody</li>--> <!-- else <li>Body_Fat</li> + purple color-->
+			<li>GS_PorkHead</li>
+			<li>GS_PorkSnout</li>
+			<li>GS_PorkEars</li>
+			<li>GS_PorkTusks</li>
+			<li>GS_PorkEyes</li>
+			<!--<li>GS_Carrier</li>-->
 			<li>AptitudeStrong_Crafting</li>
 		</genes>
 	</XenotypeDef>
