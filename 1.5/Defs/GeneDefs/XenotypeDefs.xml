@@ -22,13 +22,20 @@
 			<li>Sleepy</li>
 			<li>VoicePig</li>
 			<!--<li>GS_PorkBody</li>--> <!-- else <li>Body_Fat</li> + purple color-->
+			<li>Body_Fat</li>
 			<li>GS_PorkHead</li>
 			<li>GS_PorkSnout</li>
 			<li>GS_PorkEars</li>
 			<li>GS_PorkTusks</li>
 			<li>GS_PorkEyes</li>
+			<li>GS_PorkStains</li>
 			<!--<li>GS_Carrier</li>-->
 			<li>AptitudeStrong_Crafting</li>
+			<li>GS_PorkPurpleSkin</li>
+			<li>GS_PorkRedSkin</li>
+			<li>GS_PorkPinkSkin</li>
+			<li>GS_PorkBlueSkin</li>
+			<li>GS_PorkWhiteSkin</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

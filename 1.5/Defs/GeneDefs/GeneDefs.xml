@@ -146,13 +146,13 @@
     </symbolPack>
   </GeneDef>
   
-  <!--Ears-->
+  <!--Tusks-->
 	<GeneDef>
 		<defName>GS_PorkTusks</defName>
 		<label>pork tusks</label>
 	
 		<description>Carriers of this gene grow tusks.</description>
-		<iconPath>UI/Icons/Genes/Gene_MouthTusks</iconPath>
+		<iconPath>UI/Gene_MouthTusks</iconPath>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>0</biostatMet>
 		<endogeneCategory>Headbone</endogeneCategory>
@@ -222,7 +222,7 @@
 		<label>pork eyes</label>
 		<labelShortAdj>pork-eyed</labelShortAdj>
 		<description>Carriers of this gene have pork eyes.</description>
-		<iconPath>UI/PorkEye</iconPath>
+		<iconPath>UI/Gene_PorkEye</iconPath>
 		<prerequisite>GS_PorkHead</prerequisite>
 		<displayCategory>Cosmetic</displayCategory>
 		<displayOrderInCategory>9003</displayOrderInCategory>
@@ -239,4 +239,140 @@
     </exclusionTags>
 	</GeneDef>
 	
+	
+	<!--Stains-->
+		<GeneDef>
+		<defName>GS_PorkStains</defName>
+		<label>pork stains</label>
+	
+		<description>Carriers of this gene have natural stains over their head.</description>
+		<iconPath>UI/Gene_PorkStains</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		
+		<randomChosen>true</randomChosen>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPaths>
+          <li>Things/Pawn/Stain/Stain1</li>
+		  <li>Things/Pawn/Stain/Stain2</li>
+		  <li>Things/Pawn/Stain/Stain3</li>
+		  <li>Things/Pawn/Stain/Stain4</li>
+		  <li>Things/Pawn/Stain/Stain5</li>
+		  
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	</GeneDef>
+	
+	<!--Body-->
+	
+	
+	
+	<GeneDef ParentName="GeneSkinColorOverride">
+    <defName>GS_PorkPurpleSkin</defName>
+    <label>pork purple Skin</label>
+    <labelShortAdj>pork purply</labelShortAdj>
+    <description>Carriers of this gene have pork purple skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(133, 128, 142,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork purple</symbol></li>
+        <li><symbol>purple</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>GS_PorkRedSkin</defName>
+    <label>pork red Skin</label>
+    <labelShortAdj>pork red</labelShortAdj>
+    <description>Carriers of this gene have pork red skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(99, 53, 65,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork red</symbol></li>
+        <li><symbol>red</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>GS_PorkPinkSkin</defName>
+    <label>pork pink Skin</label>
+    <labelShortAdj>pork pink</labelShortAdj>
+    <description>Carriers of this gene have pork pink skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(145, 119, 128,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork pink</symbol></li>
+        <li><symbol>pink</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>GS_PorkBlueSkin</defName>
+    <label>pork blue Skin</label>
+    <labelShortAdj>pork blue</labelShortAdj>
+    <description>Carriers of this gene have pork blue skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(143, 141, 170,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork blue</symbol></li>
+        <li><symbol>blue</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>GS_PorkWhiteSkin</defName>
+    <label>pork white Skin</label>
+    <labelShortAdj>pork white</labelShortAdj>
+    <description>Carriers of this gene have pork white skin.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <skinColorOverride>(182, 176, 193,255)</skinColorOverride>
+    <displayOrderInCategory>175</displayOrderInCategory>
+    <selectionWeight>0.2</selectionWeight>
+		<symbolPack>
+      <prefixSymbols>
+        <li><symbol>pork white</symbol></li>
+        <li><symbol>white</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
 </Defs>
