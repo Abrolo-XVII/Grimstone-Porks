@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<XenotypeDef>
-		<defName>Grimstone.Porks</defName>
+		<defName>Grimstone_Porks</defName>
 		<label>pork</label>
 		<description></description>
 		<descriptionShort></descriptionShort>
@@ -24,11 +24,8 @@
 			<!--<li>GS_PorkBody</li>--> <!-- else <li>Body_Fat</li> + purple color-->
 			<li>Body_Fat</li>
 			<li>GS_PorkHead</li>
-			<li>GS_PorkSnout</li>
 			<li>GS_PorkEars</li>
 			<li>GS_PorkTusks</li>
-			<li>GS_PorkEyes</li>
-			<li>GS_PorkStains</li>
 			<!--<li>GS_Carrier</li>-->
 			<li>AptitudeStrong_Crafting</li>
 			<li>GS_PorkPurpleSkin</li>

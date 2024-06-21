@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================== Bases ======================-->
+  
+  <HeadTypeDef Name="PorkFBase" ParentName="AverageBase" Abstract="True">
+    <randomChosen>false</randomChosen>
+    <gender>Female</gender>
+    <requiredGenes>
+      <li>GS_PorkHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  
+    <HeadTypeDef Name="PorkMBase" ParentName="AverageBase" Abstract="True">
+    <randomChosen>false</randomChosen>
+    <gender>Male</gender>
+    <requiredGenes>
+      <li>GS_PorkHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  
+	<!--====================== Heads ======================-->
+
+  <HeadTypeDef ParentName="PorkFBase">
+    <defName>GS_PorkHeadF1</defName>
+    <graphicPath>Things/Pawn/Head/FPorkHead1</graphicPath>
+	<!-- <eyeOffsetEastWest>(x, 0, z)</eyeOffsetEastWest> === To be changed with right values-->
+	<!--  <beardOffsetXEast>x</beardOffsetXEast> === To be changed with right values-->
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkFBase">
+    <defName>GS_PorkHeadF2</defName>
+    <graphicPath>Things/Pawn/Head/FPorkHead2</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkFBase">
+    <defName>GS_PorkHeadF3</defName>
+    <graphicPath>Things/Pawn/Head/FPorkHead3</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkFBase">
+    <defName>GS_PorkHeadF4</defName>
+    <graphicPath>Things/Pawn/Head/FPorkHead4</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkFBase">
+    <defName>GS_PorkHeadF5</defName>
+    <graphicPath>Things/Pawn/Head/FPorkHead5</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkMBase">
+    <defName>GS_PorkHeadM1</defName>
+    <graphicPath>Things/Pawn/Head/PorkHead1</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkMBase">
+    <defName>GS_PorkHeadM2</defName>
+    <graphicPath>Things/Pawn/Head/PorkHead2</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkMBase">
+    <defName>GS_PorkHeadM3</defName>
+    <graphicPath>Things/Pawn/Head/PorkHead3</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkMBase">
+    <defName>GS_PorkHeadM4</defName>
+    <graphicPath>Things/Pawn/Head/PorkHead4</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="PorkMBase">
+    <defName>GS_PorkHeadM5</defName>
+    <graphicPath>Things/Pawn/Head/PorkHead5</graphicPath>
+  </HeadTypeDef>
+
+ 
+
+</Defs>
