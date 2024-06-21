@@ -25,6 +25,7 @@
 			<li>GS_PorkHeadM4</li>
 			<li>GS_PorkHeadM5</li>
 		</forcedHeadTypes>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>pork</symbol></li>
@@ -43,6 +44,8 @@
 		<label>pork ears</label>
 		<description>Carriers of this gene grow pork ears.</description>
 		<iconPath>UI/Icons/GeneIcons/GS_GenePorkEars</iconPath>
+		
+	<!--
 		<graphicData>
 			<graphicPaths>
 				<li>Things/Pawn/Ears/PorkEars1</li>
@@ -69,6 +72,45 @@
 			<colorType>Skin</colorType>
 			<layer>PostSkin</layer>
 		</graphicData>
+		-->
+		<renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+			<li>Things/Pawn/Ears/PorkEars1</li>
+				<li>Things/Pawn/Ears/PorkEars2</li>
+				<li>Things/Pawn/Ears/PorkEars2b</li>
+				<li>Things/Pawn/Ears/PorkEars3</li>
+				<li>Things/Pawn/Ears/PorkEars3b</li>
+				<li>Things/Pawn/Ears/PorkEars4</li>
+				<li>Things/Pawn/Ears/PorkEars4b</li>
+				<li>Things/Pawn/Ears/PorkEars5</li>
+				<li>Things/Pawn/Ears/PorkEars5b</li>
+				<li>Things/Pawn/Ears/PorkEars6</li>
+				<li>Things/Pawn/Ears/PorkEars7</li>
+				<li>Things/Pawn/Ears/PorkEars7b</li>
+				<li>Things/Pawn/Ears/PorkEars8</li>
+				<li>Things/Pawn/Ears/PorkEars8b</li>
+				<li>Things/Pawn/Ears/PorkEars9</li>
+				<li>Things/Pawn/Ears/PorkEars9b</li>
+				<li>Things/Pawn/Ears/PorkEars10</li>
+				<li>Things/Pawn/Ears/PorkEars10b</li>
+				<li>Things/Pawn/Ears/PorkEars11</li>
+				<li>Things/Pawn/Ears/PorkEars11b</li>
+        </texPaths>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>pork</symbol></li>
@@ -82,6 +124,7 @@
 
 
 	<!-- Tusks -->
+	<!--
 	<GeneDef ParentName="GeneHeadboneBase">
 		<defName>GS_PorkTusks</defName>
 		<label>pork tusks</label>
@@ -109,7 +152,53 @@
 				<li><symbol>pork</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
-	</GeneDef>
+	</GeneDef> 
+	-->
+	
+	
+	<GeneDef ParentName="GeneHeadboneBase">
+    <defName>GS_PorkTusks</defName>
+    <label>pork tusks</label>
+    <description>Carriers of this gene grow frontal pork tusks.</description>
+    <iconPath>UI/Icons/GeneIcons/GS_GenePorkTusks</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+			<li>Things/Pawn/Tusk/PorkTusk1</li>
+			<li>Things/Pawn/Tusk/PorkTusk2</li>
+			<li>Things/Pawn/Tusk/PorkTusk2b</li>
+			<li>Things/Pawn/Tusk/PorkTusk3</li>
+			<li>Things/Pawn/Tusk/PorkTusk3b</li>
+			<li>Things/Pawn/Tusk/PorkTusk4</li>
+			<li>Things/Pawn/Tusk/PorkTusk4b</li>
+			<li>Things/Pawn/Tusk/PorkTusk5</li>
+        </texPaths>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>pork</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>pork</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
 
 	<!--Body-->
 	
@@ -121,7 +210,7 @@
     <labelShortAdj>pork purply</labelShortAdj>
     <description>Carriers of this gene have pork purple skin.</description>
     <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
-    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
     <skinColorOverride>(133, 128, 142,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <selectionWeight>0.2</selectionWeight>
@@ -157,7 +246,7 @@
     <labelShortAdj>pork pink</labelShortAdj>
     <description>Carriers of this gene have pork pink skin.</description>
     <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
-    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
     <skinColorOverride>(145, 119, 128,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <selectionWeight>0.2</selectionWeight>
@@ -175,7 +264,7 @@
     <labelShortAdj>pork blue</labelShortAdj>
     <description>Carriers of this gene have pork blue skin.</description>
     <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
-    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
     <skinColorOverride>(143, 141, 170,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <selectionWeight>0.2</selectionWeight>
@@ -193,7 +282,7 @@
     <labelShortAdj>pork white</labelShortAdj>
     <description>Carriers of this gene have pork white skin.</description>
     <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
-    <randomBrightnessFactor>0.24</randomBrightnessFactor>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
     <skinColorOverride>(182, 176, 193,255)</skinColorOverride>
     <displayOrderInCategory>175</displayOrderInCategory>
     <selectionWeight>0.2</selectionWeight>
@@ -204,5 +293,43 @@
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
+  
+  
+  <GeneDef>
+		<defName>GS_PorkBody</defName>
+		<label>pork body</label>
+		<description>Carriers of this gene have a fat pork body.</description>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<iconPath>UI/Icons/GeneIcons/GS_GenePorkBody</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<fur>GS_PorkFur</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<statOffsets>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		</statOffsets>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+  
   
 </Defs>

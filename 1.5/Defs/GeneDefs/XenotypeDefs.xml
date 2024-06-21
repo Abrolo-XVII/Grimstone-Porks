@@ -3,7 +3,7 @@
 	<XenotypeDef>
 		<defName>Grimstone_Porks</defName>
 		<label>pork</label>
-		<description></description>
+		<description>Porks are nice</description>
 		<descriptionShort></descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Porks</iconPath>
 		<inheritable>true</inheritable>
@@ -21,6 +21,8 @@
 			<li>Aggression_Aggressive</li>
 			<li>Sleepy</li>
 			<li>VoicePig</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
 			<!--<li>GS_PorkBody</li>--> <!-- else <li>Body_Fat</li> + purple color-->
 			<li>Body_Fat</li>
 			<li>GS_PorkHead</li>
