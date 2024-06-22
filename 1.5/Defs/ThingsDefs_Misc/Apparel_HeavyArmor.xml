@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		<ThingDef ParentName="ArmorSmithableBase">
+        <defName>GS_Apparel_DarkGuardArmor</defName>
+        <label>dark Guard armor</label>
+        <description>The dark Guard armor was used by members of the said group, an elite force among the dark lord's fierce army.\nIt heavily protects the wearer with multiple coats of plates. And is orned by a piece of cloth on top of the shoulders.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/DarkGuard/DarkGuard</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>220</costStuffCount>
+		<costList>
+			<!-- <DankPyon_Linen>50</DankPyon_Linen> -->
+		</costList>
+
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <MaxHitPoints>330</MaxHitPoints>
+            <Mass>19</Mass>
+            <StuffEffectMultiplierArmor>0.94</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-1.4</MoveSpeed>
+        </equippedStatOffsets>
+
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/DarkGuard/DarkGuard</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <!--  <tags>
+                <li>MedievalMilitary</li>
+                <li>MedievalMilitaryAdvanced</li>
+                <li>MedievalPrestigeCombatGear</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>  -->
+        </apparel>
+    </ThingDef>
+
+</Defs>

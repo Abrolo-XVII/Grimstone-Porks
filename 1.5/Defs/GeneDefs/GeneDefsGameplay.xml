@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>GS_Carrier</defName>
+		<label>carrier</label>
+		<description>Carriers of this gene can carry more weight.</description>
+		<iconPath>UI/Icons/GeneIcons/GS_GeneCarrier</iconPath>
+		<statFactors>
+			<Mass>1.5</Mass>
+			<CarryingCapacity>1.5</CarryingCapacity>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+</Defs>

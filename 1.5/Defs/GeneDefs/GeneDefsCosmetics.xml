@@ -106,7 +106,7 @@
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
         <drawData>
           <defaultData>
-            <layer>70</layer>
+            <layer>12</layer>
           </defaultData>
         </drawData>
       </li>
@@ -178,12 +178,14 @@
         <parentTagDef>Head</parentTagDef>
         <drawData>
           <defaultData>
-            <layer>80</layer>
+            <layer>12</layer>
           </defaultData>
-          <dataNorth>
-            <layer>10</layer>
-          </dataNorth>
         </drawData>
+		<visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
       </li>
     </renderNodeProperties>
     <symbolPack>
@@ -293,43 +295,6 @@
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
-  
-  
-  <GeneDef>
-		<defName>GS_PorkBody</defName>
-		<label>pork body</label>
-		<description>Carriers of this gene have a fat pork body.</description>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>1000</displayOrderInCategory>
-		<iconPath>UI/Icons/GeneIcons/GS_GenePorkBody</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<fur>GS_PorkFur</fur>
-		<skinIsHairColor>false</skinIsHairColor>
-		<tattoosVisible>true</tattoosVisible>
-		<renderNodeProperties>
-			<li>
-				<debugLabel>Fur</debugLabel>
-				<nodeClass>PawnRenderNode_Fur</nodeClass>
-				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-				<baseLayer>5</baseLayer>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<colorType>Skin</colorType>
-				<parentTagDef>Body</parentTagDef>
-			</li>
-		</renderNodeProperties>
-		<exclusionTags>
-			<li>Fur</li>
-		</exclusionTags>
-		<statOffsets>
-			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-		</statOffsets>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<useSkinColorForFur>true</useSkinColorForFur>
-			</li>
-		</modExtensions>
-	</GeneDef>
   
   
 </Defs>
