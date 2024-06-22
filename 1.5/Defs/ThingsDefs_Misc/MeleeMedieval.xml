@@ -11,7 +11,7 @@
 		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<techLevel>Medieval</techLevel>
-	<equippedAngleOffset>0</equippedAngleOffset>
+	<equippedAngleOffset>-40</equippedAngleOffset>
 
 	<statBases>
 		<WorkToMake>14500</WorkToMake>

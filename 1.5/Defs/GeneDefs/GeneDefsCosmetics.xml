@@ -106,7 +106,7 @@
         <rotDrawMode>Fresh, Rotting</rotDrawMode>
         <drawData>
           <defaultData>
-            <layer>12</layer>
+            <layer>60</layer>
           </defaultData>
         </drawData>
       </li>
@@ -178,7 +178,7 @@
         <parentTagDef>Head</parentTagDef>
         <drawData>
           <defaultData>
-            <layer>12</layer>
+            <layer>60</layer>
           </defaultData>
         </drawData>
 		<visibleFacing>
